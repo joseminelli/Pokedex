@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="./pokemon.js" defer></script>
+    <script src="./search.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="logo-wrapper">
+        <img src="./assets/pokeball.svg" alt="pokeball" />
+      </div>
+      <header class="header home">
+        <div class="container">
+          <div class="search-wrapper">
+            <div class="search-wrap">
+              <img
+                src="./assets/search.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+              <input
+                type="text"
+                class="search-input body3-fonts"
+                placeholder="Procurar pokémon..."
+                id="search-input"
+              />
+              <img
+                src="./assets/cross.svg"
+                alt="cross icon"
+                class="search-close-icon"
+                id="search-close-icon"
+              />
+            </div>
+            <
+          </div>
+        </div>
+      </header>
+      <section class="pokemon-list">
+        <div class="container">
+          <div class="list-wrapper"></div>
+        </div>
+        
+        <div id="not-found-message">Não achei o pokemon :(</div>
+      </section>
+      <div class="pagination">
+        <button id="prev-page"><span class="material-symbols-outlined">
+          arrow_back
+          </span></button>
+          <div>
+            <span id="page-info">Página</span>
+            <input type="number" id="page-number-input" min="1" max="1000">
+          </div>
+        <button id="next-page"><span class="material-symbols-outlined">
+          arrow_forward
+          </span></button>
+      </div>
+      <img src="./assets/pokedex.svg" alt="pokedex" class="detail-bg" style="z-index: -2;"/>
+    </main>
+  </body>
+</html>
